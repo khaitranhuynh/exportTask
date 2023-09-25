@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+  <title>Getting Started: Handling Form Submission</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>BaConChim MiniProject 1 - Export Data</h1>
+<form action="#" th:action="@{/success}" th:object="${Export2Office_Driver}" method="post">
+  <label>Query:</label>
+  <textarea cols="100" rows="10" th:field="*{mySql}"></textarea>
+  <br/>
+  <!--<label>Connect:</label>
+  <textarea cols="25" rows="5" th:field="*{myConn}"></textarea>
+  <br/> -->
+  <label>Tên File:</label>
+  <textarea cols="100" rows="5" th:field="*{myFileName}"></textarea>
+  <br/>
+  <p>Message: <input type="text" name = "messa" /></p>
+  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

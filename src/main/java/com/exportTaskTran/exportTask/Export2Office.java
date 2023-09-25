@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
 public class Export2Office {
-    //workbook ta làm việc ~ excel file
+    //workbook for excel (buffer repair)
     private Workbook wb;
     private String conurl;
     public Export2Office(Workbook wb, String conurl) {
